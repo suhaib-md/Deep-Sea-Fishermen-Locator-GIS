@@ -1,44 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FisherLocator</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="logo">FisherLocator</div>
-      <label for="menu-toggle" class="menu-icon">&#9776;</label>
-      <ul class="navigation">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Signup</a></li>
-        <li><a href="#">Login</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="hero">
-        <div class="hero-section">
-            <div class="hero-msg">
-                    <h1>Welcome to FisherLocator</h1>
-                    <p>Find fishing spots and fellow anglers near you.</p>
-                    <div class="cta-buttons">
-                        <a href="#" class="signup-btn">Sign Up</a>
-                        <a href="#" class="login-btn">Login</a>
-                    </div>
-                </div>
-                <div class="hero-img">
-                    <img src="boatman.jpg" alt="boatman">
-                </div>
-              
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FisherFinder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="big-wrapper light">
+        <img src="./img/shape.png" alt="" class="shape" />
+
+        <header>
+          <div class="container">
+            <div class="logo">
+              <img src="./img/logo.png" alt="Logo" />
+              <h3>FisherFinder</h3>
+            </div>
+
+            <div class="links">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#" class="signin">Sign in</a></li>
+                <li><a href="#" class="btn">Sign up</a></li>
+              </ul>
+            </div>
+
+            <div class="overlay"></div>
+
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </header>
+
+        <div class="showcase-area">
+          <div class="container">
+            <div class="left">
+              <div class="big-title">
+                <h1>Real-Time GPS Tracking</h1>
+                <h1>for Deep Sea Fishermen</h1>
+              </div>
+              <p class="text">
+                Our cutting-edge GPS technology offers unparalleled precision, 
+                ensuring that every fisherman can be located with ease, 
+                no matter how far they roam.
+              </p>
+              <div class="cta">
+                <a href="#" class="btn">Get started</a>
+              </div>
+            </div>
+
+            <div class="right">
+              <img src="./img/person.png" alt="Person Image" class="person" />
+            </div>
+          </div>
         </div>
-    </section>
-  </main>
-  <footer>
-    <!-- Footer content here -->
-  </footer>
-</body>
+      </div>
+    </main>
+
+    <!-- JavaScript Files -->
+
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <script src="./app.js"></script>
+  </body>
 </html>

@@ -1,63 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Signup Page</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="signup.css">
+    <title>signin-signup</title>
 </head>
 <body>
-  <br>
-  <br>
-  <div class="cont">
-      <div class="form sign-in">
-          <h2>Welcome</h2>
-          <label>
-              <span>Email</span>
-              <input type="email" />
-          </label>
-          <label>
-              <span>Password</span>
-              <input type="password" />
-          </label>
-          <p class="forgot-pass">Forgot password?</p>
-          <button type="button" class="submit">Sign In</button>
-      </div>
-      <div class="sub-cont">
-          <div class="img">
-              <div class="img__text m--up">
-                  <h3>Don't have an account? Please Sign up!<h3>
-              </div>
-              <div class="img__text m--in">
-                  <h3>If you already have an account, just sign in.<h3>
-              </div>
-              <div class="img__btn">
-                  <button><span class="m--up">Sign Up</span></button>
-                  <button><span class="m--in">Sign In</span></button>
-              </div>
-          </div>
-          <div class="form sign-up">
-              <h2>Create your Account</h2>
-              <label>
-                  <span>Name</span>
-                  <input type="text" />
-              </label>
-              <label>
-                  <span>Email</span>
-                  <input type="email" />
-              </label>
-              <label>
-                  <span>Password</span>
-                  <input type="password" />
-              </label>
-              <button type="button" class="submit">Sign Up</button>
-          </div>
-      </div>
-  </div>
-  <script>
-      document.querySelector('.img__btn').addEventListener('click', function() {
-          document.querySelector('.cont').classList.toggle('s--signup');
-      });
-  </script>
+    <div class="container">
+        <div class="signin-signup">
+            <form action="" class="sign-in-form">
+                <h2 class="title">Sign in</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password">
+                </div>
+                <input type="submit" value="Login" class="btn">
+                <p class="social-text">Or Sign in with social platform</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="account-text">Don't have an account? <a href="#" id="sign-up-btn2">Sign up</a></p>
+            </form>
+            <form action="" class="sign-up-form">
+                <h2 class="title">Sign up</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password">
+                </div>
+                <input type="submit" value="Sign up" class="btn">
+                <p class="social-text">Or Sign in with social platform</p>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="account-text">Already have an account? <a href="#" id="sign-in-btn2">Sign in</a></p>
+            </form>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Already a member? Welcome back!</h3>
+                    <p>Sign In: Access your account with ease to pick up where you left off.</p>
+                    <button class="btn" id="sign-in-btn">Sign in</button>
+                </div>
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>New to FisherFinder?</h3>
+                    <p>Get Started Easily: Our user-friendly interface ensures a smooth journey from sign-up to full utilization.</p>
+                    <button class="btn" id="sign-up-btn">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="signupform.js"></script>
 </body>
 </html>

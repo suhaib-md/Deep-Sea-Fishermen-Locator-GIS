@@ -40,3 +40,4 @@ document.addEventListener("DOMContentLoaded", function () {
     window.location.href = "signup.html"; // Assuming get started button leads to sign up
   });
 });
+
